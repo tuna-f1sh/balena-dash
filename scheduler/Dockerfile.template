@@ -1,0 +1,4 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine
+
+COPY scripts /usr/src/
+CMD ["bash","/usr/src/sleep.sh"]
